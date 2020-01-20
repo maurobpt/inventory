@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Test JSON To HTML 4</title>
+</head>
+<body>
+    <div id="placeholder"></div>
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script>
+  $.getJSON('data2.json', function(data) {
+        var output="<ul>";
+        for (var i in data.projects) {
+//output+="<li>" + data.projects[i].project + " " + data.projects[i].description + "--" + data.projects[i].versions.version+"</li>";
+            output+="<li>" + data.projects[i].description + " -- Version " + data.projects[i].versions.version + " Release Date: " + data.projects[i].versions.version+"</li>";
+        }
+
+        output+="</ul>";
+        document.getElementById("placeholder").innerHTML=output;
+  });
+    </script>
+</body>
+</html>

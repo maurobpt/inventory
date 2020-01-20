@@ -1,0 +1,20 @@
+{"projects":[
+        {
+            "project": "IMC",
+            "description": "Inter Module Communication Protocol",
+            "versions": {
+                "version": "5.4.2",
+                "url": "imc/imc-5.4.2",
+                "date": "2014-09-09"
+            }
+        },
+        {
+            "project": "DUNE",
+            "description": "DUNE: Unified Navigation Environment",
+            "versions": {
+                "version": "2.5.0",
+                "url": "dune/dune-2.5.0",
+                "date": "2014-05-22"
+            }
+        }
+]}
